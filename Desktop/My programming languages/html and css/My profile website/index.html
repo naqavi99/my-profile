@@ -4,7 +4,7 @@
     <title>My webpage</title>
     <style>
     body {
-       background-color: blue;
+       background-color: green;
     }
         h1 {
             color: white;
@@ -14,18 +14,40 @@
             border: 2px solid black;
             text-align: center;
         }
+        .skills-row {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+        .skills-row p {
+        background-color: #16213e;
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        }
    </style>
 </head>
 <body>
     <h1>Mohammad Mustafa</h1>
     <p>I am learning to become a programmer. i build real projects.</p>
-    <h2>My skills: </h2>
-    <ul>
-    <li>Python</li>
-    <li>Html</li>
-    <li>CSS</li>
-    </ul>
+    <h2>My skills:</h2>
+    <div class="skills-row">
+        <p>Python</p>
+        <p>HTML</p>
+        <p>CSS</p>
+    </div>
     <a href="https://github.com/naqavi99/">My github</a>
+    <form>
+    <input type="text" placeholder="Your name">
+    <br><br>
+
+    <input type="email" placeholder="Your email">
+
+    <textarea placeholder="Your message"></textarea>
+    <br><br>
+
+    <button type="submit">join</button>
+    </form>
 
 </body>
 </html>
